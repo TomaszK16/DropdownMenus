@@ -1,0 +1,29 @@
+.dropdown {
+    color: white;
+    font-size: 2vh;
+    font-family: Calibri;
+}
+
+.dropdown-hitbox {
+    height: 7vh;
+    width: 7vw;
+    float: left;
+    background-color: #232323;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 1vw;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    float: left;
+    padding: 1vh 0.5vw;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0vh 0.5vh 2vh 0.25vh #e1e1e133;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

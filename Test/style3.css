@@ -1,0 +1,34 @@
+.dropdown {
+    width: 8vw;
+    font-size: 2vh;
+    font-family: Calibri;
+}
+
+.dropdown-button {
+    width: 8vw;
+    background-color: #232323;
+    box-sizing: border-box;
+    padding: 2vh;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2vh;
+    font-family: Calibri;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    padding: 1vh 0.5vw;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0vh 0.5vh 2vh 0.25vh #e1e1e133;
+}
+
+.show {
+    display: block;
+}
+
+.colorButton {
+    color: #1c91ff
+}

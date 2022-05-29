@@ -1,0 +1,231 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Menu Presentation - Slide 6</title>
+		<link rel="stylesheet" href="../mainStyle.css">
+        <link rel="stylesheet" href="../SlideCSS/6.css">
+	</head>
+	<body>
+        <a href="6.html"><div class="text1 tabsHigher secondTabColor">index.html</div></a><div class="text1 secondTab tabsHigher">index++.html</div>
+        <div class="code5">
+            <div class="redColor line">&lt;html></div>
+            <div class="redColor line">&emsp;&lt;head></div>
+            <div class="line">&emsp;&emsp;
+                <span class="redColor">&lt;link</span> 
+                <span class="purpleColor">rel</span>
+                <span class="aquaColor">=</span>
+                <span class="greenColor">"stylesheet"</span> 
+                <span class="purpleColor">href</span>
+                <span class="aquaColor">=</span>
+                <span class="greenColor">"style.css"</span>
+                <span class="redColor">></span></div>
+            <div class="line">&emsp;
+                <span class="redColor">&lt;/head></span>
+            </div>
+            <div class="line">&emsp;
+                <span class="redColor">&lt;body></span>
+            </div>
+            <div class="line">&emsp;&emsp;
+                <span class="redColor">&lt;div</span> 
+                <span class="purpleColor">class</span><span class="aquaColor">=</span><span class="greenColor">"dropdown"</span><span class="redColor">></span><span class="darkGrayColor"> [...] </span> 
+            </div>
+            <div class="line">&emsp;&emsp;
+                <span class="redColor">&lt;/div></span>
+            </div>
+            <br>
+            <div class="line">&emsp;&emsp;
+                <span class="redColor">&lt;script></span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;
+                <span class="purpleColor">function</span>
+                <span class="blueColor">reveal(){</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;&emsp;
+                <span class="grayColor">document</span><span class="aquaColor">.</span><span class="blueColor">getElementById(</span><span class="greenColor">"content"</span><span class="blueColor">)</span><span class="aquaColor">.</span><span class="grayColor">classList</span><span class="aquaColor">.</span><span class="blueColor">toggle(</span></span><span class="greenColor">"show"</span><span class="blueColor">)</span><span class="aquaColor">;</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;&emsp;
+                <span class="grayColor">document</span><span class="aquaColor">.</span><span class="blueColor">getElementById(</span><span class="greenColor">"button"</span><span class="blueColor">)</span><span class="aquaColor">.</span><span class="grayColor">classList</span><span class="aquaColor">.</span><span class="blueColor">toggle(</span></span><span class="greenColor">"colorButton"</span><span class="blueColor">)</span><span class="aquaColor">;</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;
+                <span class="blueColor">}</span>
+            </div>
+            <br>
+            <div class="line">&emsp;&emsp;&emsp;
+                <span class="grayColor">window</span><span class="aquaColor">.</span><span class="blueColor">onclick</span>
+                <span class="aquaColor">=</span>
+                <span class="purpleColor">function</span><span class="blueColor">(</span><span class="yellowColor">event</span><span class="blueColor">)</span>
+                <span class="blueColor">{</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;&emsp;
+                <span class="purpleColor">if</span>
+                <span class="aquaColor">(</span><span class="purpleColor">!</span><span class="grayColor">event</span><span class="aquaColor">.target.</span><span class="blueColor">matches</span><span class="purpleColor">(</span><span class="greenColor">"button"</span><span class="purpleColor">)</span><span class="aquaColor">)</span>
+                <span class="aquaColor">{</span>
+            </div> 
+            <div class="line">&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span class="purpleColor italic">var</span>
+                <span class="purpleColor">dropdowns</span>
+                <span class="aquaColor">=</span>
+                <span class="grayColor">document</span><span class="aquaColor">.</span><span class="blueColor">getElementsByClassName</span><span class="purpleColor">(</span><span class="greenColor">"dropdown-content"</span><span class="purpleColor">)</span><span class="aquaColor">;</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span class="purpleColor">for (</span><span class="purpleColor italic">var</span>
+                <span class="grayColor">i</span>
+                <span class="aquaColor">=</span>
+                <span class="yellowColor">0</span><span class="aquaColor">;</span>
+                <span class="grayColor">i</span>
+                <span class="purpleColor"><</span>
+                <span class="grayColor">dropdowns</span><span class="aquaColor">.length;</span>
+                <span class="grayColor">i</span><span class="aquaColor">++</span><span class="purpleColor">)</span>
+                <span class="purpleColor">{</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span class="purpleColor italic">var</span>
+                <span class="purpleColor">openDropdown</span>
+                <span class="aquaColor">=</span>
+                <span class="grayColor">dropdowns</span><span class="aquaColor">[i];</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span class="purpleColor">if</span>
+                <span class="aquaColor">(</span><span class="grayColor">openDropdown</span><span class="aquaColor">.classList.</span><span class="blueColor">contains</span><span class="greenColor">('show')</span><span class="aquaColor">)</span>
+                <span class="aquaColor">{</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span class="grayColor">openDropdown</span><span class="aquaColor">.classList.</span><span class="blueColor">remove</span><span class="greenColor">('show')</span><span class="aquaColor">;</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span class="grayColor">document</span><span class="aquaColor">.</span><span class="blueColor">getElementById(</span><span class="greenColor">"button"</span><span class="blueColor">)</span><span class="aquaColor">.</span><span class="grayColor">classList</span><span class="aquaColor">.</span><span class="blueColor">remove(</span></span><span class="greenColor">"colorButton"</span><span class="blueColor">)</span><span class="aquaColor">;</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span class="aquaColor">}</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span class="purpleColor">}</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;&emsp;
+                <span class="aquaColor">}</span>
+            </div>
+            <div class="line">&emsp;&emsp;&emsp;
+                <span class="blueColor">}</span>
+            </div>
+            <div class="line">&emsp;&emsp;
+                <span class="redColor">&lt;/script></span>
+            </div>
+            <div class="line">&emsp;<span class="redColor">&lt;/body></span></div>
+            <div class="line"><span class="redColor">&lt;/html></span></div>
+        </div>
+
+        <div class="text2">style.css</div>
+        <div class="code4">
+            <div class="line">
+                <span class="aquaColor">.dropdown</span> 
+                <span class="purpleColor">{</span>
+            </div>
+            <div class="line"><a href="vhvw.html"><span class="yellowColor">&emsp;width: 8vw;</span></div></a>
+            <div class="line"><span class="pinkColor">&emsp;font-size: 2vh;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;font-family: Calibri;</span></div>
+            <div class="line"><span class="purpleColor">}</span>
+            </div>
+            <div class="line">
+                <span class="aquaColor">.dropdown-button</span>
+                <span class="purpleColor">{</span>
+            </div>
+            <div class="line"><span class="yellowColor">&emsp;width: 8vw;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;background-color: #232323;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;box-sizing: border-box;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;padding: 2vh;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;cursor: pointer;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;text-align: center;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;font-size: 2vh;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;font-family: Calibri;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;color: white;</span></div>
+            <div class="line"><span class="purpleColor">}</span>
+            </div>
+            <div class="line">
+                <span class="aquaColor">.dropdown-content</span>
+                <span class="purpleColor">{</span>
+            </div>
+            <div class="line"><span class="yellowColor">&emsp;display: none;</span></div>
+            <div class="line"><span class="yellowColor">&emsp;position: relative;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;padding: 1vh 0.5vw;</span></div> 
+            <div class="line"><span class="pinkColor">&emsp;text-align: center;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;background-color: white;</span></div>
+            <div class="line"><span class="pinkColor">&emsp;box-shadow: 0vh 0.5vh 2vh 0.25vh #e1e1e133;</span></div>
+            <div class="line"><span class="purpleColor">}</span></div>
+            <div class="line"><span class="aquaColor">.show</span>
+                <span class="purpleColor">{</span></div>
+            <div class="line"><span class="yellowColor">&emsp;display: block;</span></div>
+            <div class="line"><span class="purpleColor">}</span></div>
+            <div class="line">
+                <span class="aquaColor">.colorButton</span>
+                <span class="purpleColor">{</span>
+            </div>
+            <div class="line">
+                <span class="pinkColor">&emsp;color: #1c91ff</span>
+            </div>
+            <div class="line">
+                <span class="purpleColor">}</span>
+            </div>
+        </div>
+
+        <header>
+            <div class="dropdown">
+                <button onclick="showContent1()" id="button1" class="dropdown-button"> ≡ HOME </button>
+                <div id="content1" class="dropdown-content">
+                    <p><a href="#">● Dropdown 1</a></p>
+                    <p><a href="#">● Dropdown 2</a></p>
+                    <p><a href="#">● Dropdown 3</a></p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="showContent2()" id="button2" class="dropdown-button"> ≡ ABOUT US </button>
+                <div id="content2" class="dropdown-content">
+                    <p><a href="#">● Our Company</a></p>
+                    <p><a href="#">● Recruitment</a></p>
+                    <p><a href="#">● Location</a></p>
+                    <p><a href="#">● More info</a></p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="showContent3()" id="button3" class="dropdown-button"> ≡ BLOG </button>
+                <div id="content3" class="dropdown-content">
+                    <p><a href="#">● Hello There!</a></p>
+                    <p><a href="#">● General Kenobi,</a></p>
+                    <p><a href="#">● You are a bold one.</a></p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="showContent4()" id="button4" class="dropdown-button"> ≡ CONTACT </button>
+                <div id="content4" class="dropdown-content">
+                    <p><a href="#">● Email us</a></p>
+                    <p><a href="#">● Call us</a></p>
+                </div>
+            </div>
+        </header>
+
+        <script>
+            function showContent1() {
+                document.getElementById("content1").classList.toggle("show");
+                document.getElementById("button1").classList.toggle("colorButton");
+            }
+            function showContent2() {
+                document.getElementById("content2").classList.toggle("show");
+                document.getElementById("button2").classList.toggle("colorButton");
+            }
+            function showContent3() {
+                document.getElementById("content3").classList.toggle("show");
+                document.getElementById("button3").classList.toggle("colorButton");
+            }
+            function showContent4() {
+                document.getElementById("content4").classList.toggle("show");
+                document.getElementById("button4").classList.toggle("colorButton");
+            }
+        </script>
+        
+        <footer>
+            <h3>Prezentacja stworzona przez Tomasza Kośla z 1ta.</h3>
+            <a href="7.html"><img src="../Images/greenArrow.png"  id="greenArrow" class="tools"></a>
+            <a href="../index.html"><img src="../Images/redBox.png" id="redBox" class="tools"></a>
+            <a href="5.html"><img src="../Images/redArrow.png" id="redArrow" class="tools"></a>
+        </footer>
+    </body>
+</html>

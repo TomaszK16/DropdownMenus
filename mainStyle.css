@@ -1,0 +1,204 @@
+body{
+    background-color: #414141;
+    font-family: Calibri;
+}
+
+header{
+	background-color: #1e1e1e;
+	width: 100vw;
+	height: 7vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+footer{
+	background-color: #1f1f1f;
+	width: 100vw;
+	height: 5vh;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+img.tools{
+    height: 4vh;
+    float: right;
+    position: fixed;
+    top: 95.5vh;
+}
+
+#greenArrow, #goBack{
+    right: 1vw;
+}
+
+#redBox{
+    right: 6vw;
+}
+
+#redArrow{
+    right: 8vw;
+}
+
+#goBack{
+    border-radius: 0.5vw;
+}
+
+img.tools:hover{
+    height: 4.5vh;
+    top: 95.25vh;
+    filter:brightness(150%);
+    background-color: #1b1b1b;
+    border-radius: 0.5vw;
+}
+
+#greenArrow:hover, #goBack:hover{
+    right: 0.75vw;
+}
+
+#redBox:hover{
+    right: 6vw;
+}
+
+#redArrow:hover{
+    right: 7.9vw;
+}
+
+
+h3{
+    color: #b0b0b0;
+    position: relative;
+    font-size: 2vh;
+    left: 1vw;
+}
+
+div.code1, div.code2, div.code3, div.code4, div.code5, .code6, .smallCode{
+    background-color: #1a1b26;
+    width: 45vw;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 1vh;
+    z-index: 2;
+
+    border:solid #e3e3e3 1vh;
+    border-radius: 0 5vh 0 5vh;
+}
+
+div.code1{
+    height: 42vh;
+    float: right;
+    top: 51vh;
+    right: 51vw;
+}
+
+div.code2{
+    float: left;
+    height: 77vh;
+    left: 51vw;
+    top: 16vh;
+    padding-left: 1vw;
+}
+
+div.code3, div.code5{
+    height: 57vh;
+    top: 36vh;
+    right: 46vw;
+    width: 50vw;
+}
+
+div.code4{
+    height: 77vh;
+    left: 56.5vw;
+    top: 16vh;
+    padding-left: 1vw;
+    width: 40vw;
+}
+
+div.code5{
+    height: 76vh;
+    top: 17vh;
+    right: 46vw;
+    width: 50vw;
+}
+
+div.code6{
+    position: relative;
+    height: 22vh;
+    width: 50vw;
+    left: 26vw;
+    top: 38vh;
+    border: none;
+    padding: 2vh 2vw 1vh 2vw;
+}
+
+.smallCode{
+    width: 50vw;
+    position: relative;
+    left: 26vw;
+    top: 38vh;
+    height: 7.5vh;
+    border: none;
+    padding: 2vh 2vw 1vh 2vw;
+    margin-bottom: 5vh;
+}
+
+.line{
+    height: 2.4vh;
+    font-family: Arial;
+    font-size: 2.25vh;
+}
+
+.biggerTextLine{
+    height: 3.5vh;
+    font-family: Arial;
+    font-size: 3vh;
+}
+
+.line:hover, .biggerTextLine:hover{
+    background-color: #ff00005c;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.redColor{
+    color:#f46b73;
+}
+
+.purpleColor{
+    color: #979cf4;
+}
+
+.greenColor{
+    color: #6dc070
+}
+
+.aquaColor{
+    color: #8ddefe
+}
+
+.grayColor{
+    color: #e0e0e0;
+}
+
+.yellowColor{
+    color: #dcd510;
+}
+
+.pinkColor{
+    color: #e252d4;
+}
+
+.blueColor{
+    color: #5e91ff;
+}
+
+.darkGrayColor{
+    color:#828282;
+}
+
+.red{
+    color: red;
+}
+

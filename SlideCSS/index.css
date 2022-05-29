@@ -1,0 +1,41 @@
+body{
+    background-color: #242424;
+}
+
+#caption{
+    font-size: 7vh;
+    font-weight: bold;
+    font-variant: small-caps; 
+    
+}
+
+header{
+    height: 12vh;
+    padding-top: 1vh;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+a{
+    font-family: Calibri;
+    font-size: 3vh;
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    position: relative;
+    top: 15vh;
+    height: 20vh; 
+    width: 20vw; 
+    border:solid #e3e3e3 1vh;
+    border-radius: 5vh 0 5vh 0;
+    margin: 0 0 5vh 10vw;
+
+    box-shadow: 0.1vh 0.1vh 1vh 1vh #131313;
+}
+
+img:hover{
+    border-color: #1c91ff;
+}

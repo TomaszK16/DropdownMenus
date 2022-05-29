@@ -1,0 +1,51 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Menu Presentation - Slide 1</title>
+		<link rel="stylesheet" href="../mainStyle.css">
+        <link rel="stylesheet" href="../SlideCSS/1.css">
+	</head>
+	<body>
+        <header>
+            <span id="caption">Jak Działają Rozwijane Menu (hover)</span>
+        </header>
+
+        <span style="color:#bababa"></span>
+
+        <button onclick="hitboxColorToggle()" id="button1" class="hbColorBtn"> Hitbox background</button><br>
+        <button onclick="contentColorToggle()" id="button2" class="contentColorBtn"> Content background</button><br>
+        <button onclick="dropdownColorToggle()" id="button3" class="contentColorBtn redBackground"> Dropdown background </button>
+        <div class="dropdown" id="dropdown">
+            <div id="hitbox" class="dropdown-hitbox hitboxColor">dropdown-hitbox ⌵</div>
+            <div id="content" class="dropdown-content contentColor">
+                <p><a href="#">&emsp;</a></p>
+                <p><a href="#">&emsp;</a></p>
+                <p><a href="#">dropdown-content</a></p>
+                <p><a href="#">&emsp;</a></p>
+                <p><a href="#">&emsp;</a></p>
+            </div>
+        </div>
+
+        <script>
+            function hitboxColorToggle() {
+                document.getElementById("hitbox").classList.toggle("hitboxColor");
+                document.getElementById("button1").classList.toggle("redBackground");
+            }
+            function contentColorToggle() {
+                document.getElementById("content").classList.toggle("contentColor");
+                document.getElementById("button2").classList.toggle("redBackground");
+            }
+            function dropdownColorToggle(){
+                document.getElementById("dropdown").classList.toggle("dropdownColor");
+                document.getElementById("button3").classList.toggle("redBackground");
+            }
+        </script>
+
+        <footer>
+            <h3>Prezentacja stworzona przez Tomasza Kośla z 1ta.</h3>
+            <a href="2.html"><img src="../Images/greenArrow.png"  id="greenArrow" class="tools"></a>
+            <a href="../index.html"><img src="../Images/redBox.png" id="redBox" class="tools"></a>
+            <a href="0.html"><img src="../Images/redArrow.png" id="redArrow" class="tools"></a>
+        </footer>
+    </body>
+</html>

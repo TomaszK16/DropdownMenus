@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+    <body>
+        <div class="dropdown">
+            <button onclick="reveal()" id="button" class="dropdown-button">≡ HOME</button>
+            <div id="content" class="dropdown-content">
+                <p><a href="#">● Dropdown 1</a></p>
+                <p><a href="#">● Dropdown 2</a></p>
+                <p><a href="#">● Dropdown 3</a></p>
+            </div>
+        </div>
+
+        <script>
+            function reveal() {
+                document.getElementById("content").classList.toggle("show");
+                document.getElementById("button").classList.toggle("colorButton");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches("button")) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                            document.getElementById("button").classList.remove("colorButton");
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+header{
+    z-index: 3;
+}
+.dropdown {
+    display: block;
+    width: 10vw;
+    font-size: 2vh;
+    font-family: Calibri;
+    float: left;
+    margin-left: 1vh;
+}
+
+.dropdown-button {
+    width: 10vw;
+    height: 7vh;
+    background-color: #232323;
+    border: none;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2vh;
+    cursor: pointer;
+    font-size: 2vh;
+    font-family: Calibri;
+}
+
+.dropdown-content {
+    display: none;
+    height: max-content;
+    padding: 1vh 0.5vw;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px #e1e1e15e;
+}
+
+.colorButton{
+    color: #1c91ff;
+}
+
+.show {
+    display: block;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.text1{
+    background-color: #e3e3e3;
+    float:left;
+    position: relative;
+    width: 14vw;
+    top: 27.5vh;
+    left: 3.6vw;
+
+    border:#e3e3e3 solid;
+    border-width: 1vw;
+    border-radius: 0 5vw 0 0;
+    font-size: 4vh;
+    font-weight: bold;
+    color: black; 
+    z-index: 1;
+    cursor:pointer;
+}
+
+.text2{
+    background-color: #e3e3e3;
+    position:fixed;
+    width: 14vw;
+    top: 8.5vh;
+    left: 56.5vw;
+
+    border:#e3e3e3 solid;
+    border-width: 1vw;
+    border-radius: 0 5vw 0 0;
+    font-size: 4vh;
+    font-weight: bold;
+    color: black;
+    cursor:pointer; 
+}
+
+.secondTab{
+    left: -1vw;
+    z-index: 0;
+    
+    box-sizing: content-box;
+    padding-left: 0.5vw;
+    border-left-width: 5vw;
+    border-right-width: 0.001vw; 
+    cursor:pointer;
+}
+
+.secondTabColor{
+    background-color: #878787;
+    border-color: #878787;
+}
+
+.tabsHigher{
+    top: 8.5vh;  
+}

@@ -1,0 +1,53 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Menu Presentation - Slide 5</title>
+		<link rel="stylesheet" href="../mainStyle.css">
+        <link rel="stylesheet" href="../SlideCSS/5.css">
+	</head>
+	<body>
+        <header><span id="caption">Jak Działają Przyciski?</span></header>
+        <button onclick="changeCaptionColor()">Button</button>
+        <div class="smallCode">
+            <div class="biggerTextLine">
+                <span class="redColor">&lt;button</span>
+                <span class="purpleColor">id</span><span class="aquaColor">=</span><span class="greenColor">"id"</span>
+                <span class="purpleColor">class</span><span class="aquaColor">=</span><span class="greenColor">"class"</span>
+                <span class="purpleColor">onclick</span><span class="aquaColor">=</span><span class="blueColor">"function()"</span>
+                <span class="redColor">></span><span class="grayColor">Button</span><span class="redColor">&lt;/button></span>
+            </div>
+        </div>
+        <div class="smallCode">
+            <div class="biggerTextLine">
+                <span class="redColor">&lt;button</span>
+                <span class="purpleColor">onclick</span><span class="aquaColor">=</span><span class="blueColor">"changeCaptionColor()"</span>
+                <span class="redColor">></span><span class="grayColor">Button</span><span class="redColor">&lt;/button></span>
+            </div>
+        </div>
+        <div class="code6">
+            <div class="biggerTextLine"><span class="redColor">&lt;button></span></div>
+            <div class="biggerTextLine">&emsp;
+                <span class="purpleColor">function</span>
+                <span class="blueColor">changeCaptionColor(){</span>
+            </div>
+            <div class="biggerTextLine">&emsp;&emsp;
+                <span class="grayColor">document</span><span class="aquaColor">.</span><span class="blueColor">getElementById</span><span class="aquaColor">(</span><span class="greenColor">"caption"</span><span class="aquaColor">)</span><span class="aquaColor">.</span><span class="grayColor">classList</span><span class="aquaColor">.</span><span class="blueColor">toggle</span><span class="aquaColor">(</span><span class="greenColor">"red"</span><span class="aquaColor">)</span><span class="aquaColor">;</span>
+            </div>
+            <div class="biggerTextLine">&emsp;
+                <span class="blueColor">}</span>
+            </div>
+            <div class="biggerTextLine"><span class="redColor">&lt;/button></span></div>
+        </div>
+        <script>
+            function changeCaptionColor(){
+                document.getElementById("caption").classList.toggle("red");
+            }
+        </script>
+        <footer>
+            <h3>Prezentacja stworzona przez Tomasza Kośla z 1ta.</h3>
+            <a href="6.html"><img src="../Images/greenArrow.png"  id="greenArrow" class="tools"></a>
+            <a href="../index.html"><img src="../Images/redBox.png" id="redBox" class="tools"></a>
+            <a href="4.html"><img src="../Images/redArrow.png" id="redArrow" class="tools"></a>
+        </footer>
+    </body>
+</html>
